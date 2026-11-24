@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+</head>
+<body>
+
+    <h2>Library Management System</h2>
+
+    <h3>Add Book</h3>
+    <form action="LibraryServlet" method="post">
+        <input type="hidden" name="action" value="add">
+
+        Book Name:
+        <input type="text" name="bookName" required><br><br>
+
+        Author:
+        <input type="text" name="author" required><br><br>
+
+        Book Type:
+        <input type="text" name="bookType" required><br><br>
+
+        Price:
+        <input type="number" name="price" required><br><br>
+
+        <input type="submit" value="Add Book">
+    </form>
+
+    <h2>View All Books</h2>
+    <form action="LibraryServlet" method="get">
+        <button type="submit">View Books</button>
+    </form>
+
+    <h2>Update Book</h2>
+    <form action="LibraryServlet" method="post">
+        <input type="hidden" name="action" value="update">
+
+        Book ID:
+        <input type="number" name="bookId" required><br><br>
+
+        Book Name:
+        <input type="text" name="bookName" required><br><br>
+
+        Author:
+        <input type="text" name="author" required><br><br>
+
+        Book Type:
+        <input type="text" name="bookType" required><br><br>
+
+        Price:
+        <input type="number" name="price" required><br><br>
+
+        <button type="submit">Update Book</button>
+    </form>
+
+    <h2>Delete Book</h2>
+    <form action="LibraryServlet" method="post">
+        <input type="hidden" name="action" value="delete">
+
+        Book ID:
+        <input type="number" name="bookId" required><br><br>
+
+        <button type="submit">Delete Book</button>
+    </form> 
+
+</body>
+</html>
